@@ -54,6 +54,7 @@ data class Country(val name: String,
         rootItem.children.add(TreeItem("Longitude: ${latitudeLongitude[1]}"))
         rootItem.children.add(TreeItem("Demonym: $demonym"))
         rootItem.children.add(TreeItem("Area: $area"))
+        //todo: display country name instead of code
         when {
             borderingCountries.size == 1 -> {
                 rootItem.children.add(TreeItem("Bordering Country: ${borderingCountries[0]}"))
